@@ -1,0 +1,203 @@
+body {
+   
+    background-color: lightgray;
+
+    .contcont{
+         @include goFlex(column);
+         align-items: center;
+    }
+    .index-header {
+       
+        padding: 0 30px;
+    @media (max-width:1024px ) {
+      
+    }
+    }
+
+        ul {
+            width: 400px;
+            @include goFlex(row, space-between, center);
+            padding: 5px 0;}
+
+            li {
+                color: $primaryColor;
+                font-size: $primaryFontSize;
+                
+            }
+            h1{
+                padding-bottom: 50px;
+                color: $primaryColor;
+                
+                width: 120px;
+                margin-top: 30px;
+               
+                
+            }
+            .flex-conteiner{
+            @include goFlex(row, space-evenly, center);
+            justify-content: space-evenly;
+            margin-top: -10px;
+            @media (max-width:1024px) {
+                padding-left: 100px;
+                
+            }
+            @media (max-width:830px) {
+                @include goFlex;
+                justify-content: space-evenly;
+                align-items: stretch;
+            }
+            @media (max-width: 650px){
+                margin-left:-100px;
+                               } 
+            @media (max-width: 450px){
+                margin-left:-70px;
+                               }
+            }
+            
+            h4{
+                color: white;
+                font-size: 20px;
+               
+            }
+            
+            p{
+                width: 280px;
+                height: 100px;
+                color: $secondaryColor;
+                font-size: $primaryFontSize;
+                align-content: center;
+                margin-left: 10px;
+            }
+            h3{
+                color: $secondaryColor;
+                font-size: $primaryFontSize;  
+                margin-left: 120px;
+                height: 20px;
+                margin-bottom: 10px;
+            }
+           .conteiner{
+            background-color: white;
+            border-radius: 2%;
+            border-width: 362px;
+            margin-top: 30px;
+            
+           }
+           .pic{
+          margin-left: -70px;
+           }
+           .pic,h3{
+            display: inline-block;
+          }
+          .flex-conteiner1{
+            @include goFlex(row) ;
+            padding-left: 100px;
+            @media (max-width:1024px) {
+               align-items: stretch;
+            }
+          }
+           .cont-left{
+            @include goFlex ;
+            @media (max-width:1024px) {
+                @include goFlex(column);
+                align-items: center;
+             }
+             @media (max-width:800px){
+                padding-left: 35px;
+             }
+             @media (max-width: 650px){
+                margin-left:-100px;
+                               } 
+             @media (max-width: 450px){
+                margin-left:-100px;
+                               }
+           }
+
+           .pic2{
+            border-radius: 5%;
+            margin-top: 40px;
+            @media (max-width:800px) {
+               width: 500px;
+             }
+             @media (max-width: 450px){
+                width: 400px;
+                               }
+         
+           }
+           .cont-right{
+            @include goFlex(column) ;
+            padding-left: 800px;
+            margin-top: -970px;
+            
+            @media (max-width:830px) {
+                @include goFlex;
+                justify-content: space-evenly;
+                align-items: stretch;
+                 padding-left: 50px;
+               padding-top: 900px;
+            }
+            @media (max-width: 650px){
+                margin-left:-200px;
+                               } 
+            @media (max-width: 450px){
+                margin-left:-100px;
+                
+                               }
+           }
+           .pic3{
+            margin-top: 100px;
+
+           }
+         .border{
+            @include goFlex(row) ;
+            background-color: #243043;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            margin-top: 30px;
+            @media (max-width:1024px) {
+                width: 130%;
+                height: 260px;
+              }
+              @media (max-width: 450px){
+                height: 600px;
+                width: 120%;
+                               }
+         }
+           h2{
+            color: $secondaryColor;
+            font-size: $primaryFontSize;  
+            width: 33px;
+             height: 14px;
+             margin-right: 100px;
+             margin-bottom: 20px;
+             margin-left: 50px;
+             margin-top: 10px;
+             
+           }
+           .h11{
+            color: aliceblue;
+            font-size: $primaryFontSize;  
+            width: 700px;
+            @media (max-width:1024px) {
+                padding-left: 50px;
+              }
+              @media (max-width: 800px){
+width: 100%;
+              }
+              @media (max-width: 450px){
+                width: 100%;
+                               }
+           }
+           .bu{
+            margin-top: -37px;
+            @media (max-width:1024px) {
+                margin-top: -370px;
+              }
+              @media (max-width: 800px){
+               margin-left: 600px;
+                              }
+                              @media (max-width: 450px){
+                                margin-left:50px;
+                                               }
+           }
+}
